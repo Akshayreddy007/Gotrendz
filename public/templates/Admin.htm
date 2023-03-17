@@ -1,0 +1,23 @@
+<div class="addNewProductBlock">
+    <ul>
+        <li>
+            <form method="post" enctype="multipart/form-data" class="form">
+                <input type="file" name="insertImage">
+                <input type="button" class="btn btn-success" value="Upload Image" onclick="uploadNewImage()">
+            </form>
+        </li>
+        <li>
+            <input type="text" id="pname" placeholder="Product Name">
+        </li>
+        <li>
+            <input type="text" id="ptext" placeholder="About Product">
+        </li>
+        <li>
+            <input type="number" id="pprice" placeholder="Product Price">
+        </li>
+        <li>
+            <input type="button" class="btn btn-success" value="Upload Product" onclick="addNewProduct()">
+        </li>
+        <li class="succssBlock"></li>
+    </ul>
+</div>

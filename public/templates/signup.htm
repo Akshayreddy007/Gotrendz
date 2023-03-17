@@ -1,0 +1,48 @@
+<ul class="signup">
+    <li>
+        <input type="text" placeholder="username" id="signupName" required>
+    </li>
+    <li>
+        <input type="email" placeholder="Email_Id" id="signupmail" required>
+    </li>
+    <li>
+        <input type="password" placeholder="password" id="signupPass" required>
+        <label>
+            <input type="checkbox" onclick="showPassword()" id="check">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16" id="showpass">
+                <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+            </svg>
+        </label>
+    </li>
+    <li>
+        <input type="password" placeholder="re-enter password" id="signupRePass" required>
+        <label>
+            <input type="checkbox" onclick="showPassword()" id="Recheck">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16" id="showpass">
+                <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+            </svg>
+        </label>
+    </li>
+    <li>
+        <span id="capcha"></span> <span class="error capchaErr">Invalid Capcha Text</span>
+        <svg id="reloadIcon" onclick="showCaptcha()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+        </svg>
+            <img src="" id="captchaImage">
+    </li>
+    <li>
+        <input type="text" placeholder="Enter text as above" id="captchatext" maxlength="5" onkeyup="enableLogin(event)">
+    </li>
+    <li class="signupbtn">
+        <input type="button" value="SignUp" id="signupbtn1" class="btn btn-success" onclick="signUpNewUser()" disabled>
+    </li>
+    <li>
+        <a href="#login" onclick="showSelectedPage('login')">Have an account? Login</a><br>
+    </li>
+    <li>
+        <span id="success"></span>
+    </li>
+</ul>

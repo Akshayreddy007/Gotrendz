@@ -1,0 +1,85 @@
+.login, .signup,.addNewProductBlock{
+  border: 1px solid;
+  position: absolute;
+  right: 40px;
+  margin: 30px;
+  padding: 20px;
+}
+ul li{
+  list-style-type: none;
+  padding: 5px;
+  margin: 2px;
+}
+.lbtn,.sbtn,.logout{
+  border: none;
+  margin: 5px;
+}
+.lbtn a:hover,.sbtn a:hover{
+  text-decoration: none;
+  color: green;
+}
+.loginbtn,.signupbtn{
+  display: flex;
+  justify-content: center;
+}
+a:hover{
+  text-decoration: underline;
+  color: aquamarine;
+}
+a{
+  text-decoration: none;
+}
+.error{
+  color: red;
+  display: none;
+}
+#check,#Recheck{
+  display: none;
+}
+#showpass{
+  content: "";
+  display: block;
+}
+#pDetailsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr))
+}
+#productDetails{
+  margin: 10px;
+}
+.row{
+  margin: 10px;
+  height: 100%;
+}
+.card:hover{
+  cursor: pointer;
+}
+#success{
+  color: green;
+  font-size: larger;
+}
+.succssBlock{
+  display: none;
+  color: green;
+  font-weight: bolder;
+  font-size: larger;
+}
+.form{
+  border: 1px solid;
+  padding: 5px;
+}
+.logout{
+  cursor: pointer;
+  display: none;
+}
+.logout a:hover{
+  color: red;
+  text-decoration: none;
+}
+@media screen and (max-width:500px){
+  .login{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+}
